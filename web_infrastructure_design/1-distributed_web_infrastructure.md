@@ -24,10 +24,10 @@ Replica:only handles read requests.
 ### The difference between the Primary node and the Replica node :
 The Primary node accepts writes and updates the data.
 The Replica node only receives data updates from the Primary and answers read-only requests.
- ###  Issues :
-    SPOF:
+ ###  Issues 
+   # SPOF:
      The load balancer is still a Single Point of Failure , if it goes down nobody can access the servers.
-    Security:
+   # Security:
      There is no firewall to block unwanted traffic and no HTTPS so traffic is unencrypted.
-     No Monitoring:
+   # No Monitoring:
       There is no system to check if servers are healthy or overloaded.

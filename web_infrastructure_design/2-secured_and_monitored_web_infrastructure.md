@@ -21,6 +21,6 @@ To monitor Queries Per Second (QPS) on the web server, configure the monitoring 
    ### Terminating SSL at the load balancer:
 If SSL ends at the load balancer, traffic between the load balancer and backend servers is unencrypted inside the network .
    ### Only one MySQL server accepts writes :
-    Having only one Primary (Master) database means if it fails, you cannot write new data until it is fixed or a new Primary is promoted. This creates a SPOF for writes.
+Having only one Primary (Master) database means if it fails, you cannot write new data until it is fixed or a new Primary is promoted. This creates a SPOF for writes.
    ###  Same components on all servers :
-      Having every server run web server with app server with  database can waste resources. It makes scaling harder and managing databases more complicated. It’s better to split roles so each server does one job well.
+Having every server run web server with app server with  database can waste resources. It makes scaling harder and managing databases more complicated. It’s better to split roles so each server does one job well.
